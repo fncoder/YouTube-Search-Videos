@@ -1,0 +1,171 @@
+*{
+box-sizing: border-box;
+padding:0;
+margin:0;
+}
+
+html,body{
+width:100%;
+height:100%;
+font-family: Arial;
+font-size: 16px;
+}
+
+img{
+display:block;
+cursor: pointer;
+}
+
+ul,li{
+list-style: none;
+}
+
+iframe{
+border:none;
+margin-top: 24px;
+width: 100%;
+height:360px;
+}
+
+
+#root{
+height:100%;
+}
+
+.wrapper-app{
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background: #E1E1E1;
+min-height:100%;
+}
+
+.react-app{
+max-width: 700px;
+width:100%;
+}
+
+.react-app__top{
+background: #F4F4F4;
+padding: 30px;
+display:flex;
+flex-direction: row;
+align-items: center;
+flex-wrap: wrap;
+
+	.react-app__header{
+	width:50%;
+
+		.react-app__title{
+		font-size: 28px;
+
+			.text-color{
+			color: #DD2826;
+			}
+		}
+	}
+
+	.titles-box{
+	height:24px;
+	position: relative;
+	width: 210px;
+	overflow: hidden;
+	margin-top: -10px;
+
+		.react-app_subtitle{
+		margin-top: -10px;
+		color: #666;
+		font-size:15px;
+		order:2;
+		line-height: 2.8;
+		position: relative;
+		top:-32px;
+		animation: box-animate 3s infinite;
+		}
+	}
+
+
+	.search{
+	width:50%;
+	padding:15px;
+	border:none;
+	font-size:19px;
+	color: #666;
+	border:1px solid #c8c8c8;
+	margin-top: 25px;
+	}
+}
+
+
+.videos{
+min-height:200px;
+background: #ffffff;
+color: #666;
+padding: 30px;
+
+	.video-item{
+	display:flex;
+	flex-direction: column;
+    padding: 16px 0;
+    border-bottom: 1px dotted #ccc;
+
+    	.video-content{
+		display: flex;
+		flex-direction: row;
+
+			.yt-description{
+			 padding: 5px 0 0 8px;
+
+
+			 .title-description{
+			 color: #167ac6;
+			 cursor: pointer;
+			 	&:hover{
+			 	text-decoration: underline;
+			 	}
+			 }
+
+			 .channel-title{
+			 font-size: 11px;
+			 margin-top: 5px;
+			 }
+			 
+			 .video-description{
+			 font-size: 11px;
+			 margin-top: 5px;
+			 }
+
+			}
+    	}
+
+	}
+
+	.video-item:last-child{
+	border: none;
+	}
+
+	.btn{
+	height: 28px;
+	font-size: 11px;
+	padding: 0 10px;
+	background: #f8f8f8;
+	border: 1px solid #d3d3d3;
+	color: #333;
+	border-radius: 2px;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+	cursor: pointer;
+	}
+}
+
+@keyframes box-animate{
+	0%{
+	top:0;
+	position: relative;
+	}
+
+	100%{
+	top:-32px;
+	position: relative;
+	}
+}
