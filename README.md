@@ -7,7 +7,7 @@
 
 ```
 git clone https://github.com/fncoder/YouTube-Search-Videos.git
-cd app
+cd YouTube-Search-Videos
 npm install
 npm run start:watch
 ```
