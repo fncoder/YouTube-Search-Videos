@@ -30,7 +30,7 @@ var EmbedVideo = function (_React$Component) {
   _createClass(EmbedVideo, [{
     key: 'render',
     value: function render() {
-      return _react2.default.createElement('iframe', { id: 'player', src: 'http://www.youtube.com/embed/' + this.props.videoId });
+      return _react2.default.createElement('iframe', { id: 'player', src: 'https://www.youtube.com/embed/' + this.props.videoId });
     }
   }]);
 

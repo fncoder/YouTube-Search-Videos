@@ -3,7 +3,7 @@ import React from 'react'
 class EmbedVideo extends React.Component {
   render () {
     return (
-      <iframe id='player' src={`http://www.youtube.com/embed/${this.props.videoId}`} />
+      <iframe id='player' src={`https://www.youtube.com/embed/${this.props.videoId}`} />
     )
   }
 }
