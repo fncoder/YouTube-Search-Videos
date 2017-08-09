@@ -13,4 +13,4 @@ npm install
 
 
 ## License
-[MIT](https://fncoder.github.io/youtube-search-videos/)
+[MIT](https://github.com/fncoder/youtube-search-videos/blob/master/LICENSE)
